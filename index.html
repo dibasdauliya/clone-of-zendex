@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clone of Zendesk website by Dibas Dauliya 🚀🤭">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clone of Zendesk website by Dibas Dauliya 🚀🤭"
+    />
     <title>Zendex - Clone</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="top">
-                <ul>
-                    <li><a href="#">Sign in</a></li>
-                    <li><a href="#">Product Support</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">English</a></li>
-                </ul>
-            </div>
-            <nav id="main-nav">
-                <img src="https://web-assets.zendesk.com/images/navigation/header/zendesk-logo.svg" alt="Zendex Logo" class="logo">
-                <ul>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Demo</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#" class="btn">Get Started</a></li>
-                </ul>
-            </nav>
-            <div class="header-content">
-                <h1>The shortcut to happy customers.</h1>
-                <p class="lead">Zendesk makes support, sales, and customer engagement software for everyone. It’s quick to implement, easy to use, and scales to fit your needs. With Zendesk, it takes hours — not weeks — to get up and running.</p>
-                <div>
-                    <a href="#" class="btn">Free trial</a>
-                <a href="#" class="btn border">View demo</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="top">
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Product Support</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
         </div>
+        <nav id="main-nav">
+          <img
+            src="https://web-assets.zendesk.com/images/navigation/header/zendesk-logo.svg"
+            alt="Zendex Logo"
+            class="logo"
+          />
+          <ul id="nav-list">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+          <!-- <a href="#" class="btn">Get Started</a> -->
+
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+        <div class="header-content">
+          <h1>The shortcut to happy customers.</h1>
+          <p class="lead">
+            Zendesk makes support, sales, and customer engagement software for
+            everyone. It’s quick to implement, easy to use, and scales to fit
+            your needs. With Zendesk, it takes hours — not weeks — to get up and
+            running.
+          </p>
+          <div>
+            <a href="#" class="btn">Free trial</a>
+            <a href="#" class="btn border">View demo</a>
+          </div>
+        </div>
+      </div>
     </header>
-</body>
+
+    <script>
+      const burger = document.querySelector(".burger"),
+        navList = document.querySelector("#nav-list");
+
+      burger.addEventListener("click", () => {
+        navList.classList.toggle("nav-active");
+        burger.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
